@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LarkoCalcule.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="boutonLabStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#8FB6CE" />
+                <Setter Property="TextColor" Value="#FFFFFF" />
+            </Style>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
