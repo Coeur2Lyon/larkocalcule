@@ -3,16 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LarkoCalcule.Views.MenuPage">
     <ContentPage.Content>
-        <StackLayout Padding="0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout Spacing="0" Padding="0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <StackLayout BackgroundColor="#8FB6CE" Padding="10,0,10,0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
-                <Image Source="logo_Menu.png" />
-                <Label Margin="0,60,0,20" Text="LARKO CALCULE" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="40" TextColor="#FFFFFF">
-                </Label>
+                <Image Margin="0,20,0,0" Source="logo_Menu.png" HeightRequest="100"/>
+                <Label Margin="0,40,0,0" Text="LARKO " VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="40" TextColor="#FFFFFF"/>
+                <Label Margin="0,0,0,20" Text=" CALCULE" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="40" TextColor="#FFFFFF"/>
             </StackLayout>
+            <Image  Margin="0" Source="lark_separator_bas.png" HorizontalOptions="FillAndExpand"/>
             <StackLayout Padding="10,0,10,0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="End">
                 <Button Style="{StaticResource boutonLabStyle}" Margin="0,20,0,0 " x:Name="CompteurButton" HorizontalOptions="Center" Text="Compteur" WidthRequest="100" Clicked="CounterButtonClicked"/>
             </StackLayout>
-            <StackLayout BackgroundColor="#8FB6CE" Padding="10,0,10,0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand">
+            <Image  Margin="0,0,0,-30" Source="lark_separator_haut.png" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand"/>
+            <StackLayout Spacing="0" Margin="0" Padding="0" BackgroundColor="#8FB6CE"  Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand">
                 <Image Source="larko_Calcul_Menu.png" />
             </StackLayout>
         </StackLayout>
