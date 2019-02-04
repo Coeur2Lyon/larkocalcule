@@ -16,5 +16,9 @@ namespace LarkoCalcule.Views
 		{
 			InitializeComponent ();
 		}
-	}
+        private void CounterButtonClicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new CountPage());
+        }
+    }
 }

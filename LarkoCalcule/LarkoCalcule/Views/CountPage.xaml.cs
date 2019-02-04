@@ -16,5 +16,9 @@ namespace LarkoCalcule.Views
 		{
 			InitializeComponent ();
 		}
-	}
+        private void Count_Button_Clicked(object sender, EventArgs e)
+        {
+            compteur.Text = (int.Parse(compteur.Text) + 1).ToString();
+        }
+    }
 }
