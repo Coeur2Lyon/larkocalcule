@@ -12,9 +12,21 @@
             <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
                 <Setter Property="BackgroundColor" Value="#FFFFFF"/>
             </Style>
-            <Style x:Key="boutonLabStyle" TargetType="Button">
+            <Style x:Key="boutonLarkoStyle" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="#8FB6CE" />
-                <Setter Property="TextColor" Value="#FFFFFF" />
+                <Setter Property="TextColor" Value="#FFFFFF"/>
+                <Setter Property="FontSize" Value="50"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Padding" Value="10,0,0,0"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="MinimumHeightRequest" Value="70"/>
+                <Setter Property="HeightRequest" Value="70"/>
+                <Setter Property="WidthRequest" Value="90"/>
+                <Setter Property="WidthRequest" Value="90"/>
+            </Style>
+            <Style x:Key="boutonSombreStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#111111" />
+            <Setter Property="TextColor" Value="#FFFFFF" />
             </Style>
         </ResourceDictionary>
 
