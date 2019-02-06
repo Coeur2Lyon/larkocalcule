@@ -12,6 +12,7 @@
             <Image  Aspect="AspectFill" Margin="0" Source="lark_separator_bas.png" HorizontalOptions="FillAndExpand"/>
             <StackLayout Padding="10,0,10,0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
                 <Grid BackgroundColor="#ffffff" x:Name="buttons_Grid" RowSpacing="0" ColumnSpacing="0">
+                    
                     <Grid.RowDefinitions  BackgroundColor="#ffffff">
                         <RowDefinition  Height="*"/>
                         <RowDefinition Height="*"/>
@@ -21,10 +22,10 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <ImageButton Source="multiplie.png" Grid.Row="0" Grid.Column="0" Margin="0,20,0,0 " x:Name="MultiplicationButton" Clicked="CounterButtonClicked"/>
-                    <ImageButton Source="divise.png" Grid.Row="0" Grid.Column="1" Margin="0,20,0,0 " x:Name="DivisionButton" Clicked="CounterButtonClicked"/>
-                    <ImageButton Source="additionne.png" Grid.Row="1" Grid.Column="0" Margin="0,20,0,0 " x:Name="AdditionButton" Clicked="CounterButtonClicked"/>
-                    <ImageButton Source="soustrait.png" Grid.Row="1" Grid.Column="1" Margin="0,20,0,0 " x:Name="SoustractionButton" Clicked="CounterButtonClicked"/>                    
+                    <ImageButton Style="{StaticResource boutonLarkoStyle}" BackgroundColor="#ffffff" Source="multiplie.png" Grid.Row="0" Grid.Column="0" Margin="0,20,0,0 " x:Name="MultiplicationButton" Clicked="CounterButtonClicked"/>
+                    <ImageButton Style="{StaticResource boutonLarkoStyle}" Source="divise.png" Grid.Row="0" Grid.Column="1" Margin="0,20,0,0 " x:Name="DivisionButton" Clicked="CounterButtonClicked"/>
+                    <ImageButton Style="{StaticResource boutonLarkoStyle}" Source="additionne.png" Grid.Row="1" Grid.Column="0" Margin="0,20,0,0 " x:Name="AdditionButton" Clicked="CounterButtonClicked"/>
+                    <ImageButton Style="{StaticResource boutonLarkoStyle}" Source="soustrait.png" Grid.Row="1" Grid.Column="1" Margin="0,20,0,0 " x:Name="SoustractionButton" Clicked="CounterButtonClicked"/>                    
                     <Button Style="{StaticResource boutonSombreStyle}" Grid.RowSpan="2" Grid.Column ="2" Margin="0,20,0,0 " x:Name="CalculatorButton" HorizontalOptions="Center" Text="Calc" WidthRequest="100" Clicked="CounterButtonClicked"/>
                 </Grid>
 
