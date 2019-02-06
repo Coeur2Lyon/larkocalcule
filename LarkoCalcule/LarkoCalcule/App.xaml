@@ -9,14 +9,11 @@
                 <Setter Property="BarBackgroundColor" Value="#8FB6CE"/>
                 <Setter Property="BarTextColor" Value="#FFFFFF"/>
             </Style>
-            <Style TargetType="Grid" ApplyToDerivedTypes="True">
-                <Setter Property="BackgroundColor" Value="#111111" />
-            </Style>
             <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
                 <Setter Property="BackgroundColor" Value="#FFFFFF"/>
             </Style>
             <Style x:Key="boutonLarkoStyle" TargetType="ImageButton">
-                <Setter Property="BackgroundColor" Value="#111111"/>
+                <Setter Property="BackgroundColor" Value="#FFFFFF"/>
 
             </Style>
             <Style x:Key="boutonSombreStyle" TargetType="Button">
