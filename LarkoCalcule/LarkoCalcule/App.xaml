@@ -16,7 +16,7 @@
                 <Setter Property="BackgroundColor" Value="#FFFFFF"/>
             </Style>
             <Style x:Key="boutonLarkoStyle" TargetType="ImageButton">
-                <Setter Property="BackgroundColor" Value="#111111"/>
+                <Setter Property="BackgroundColor" Value="#ffffff"/>
 
             </Style>
             <Style x:Key="boutonSombreStyle" TargetType="Button">
