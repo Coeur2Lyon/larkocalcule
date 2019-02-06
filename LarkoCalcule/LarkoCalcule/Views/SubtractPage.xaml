@@ -3,10 +3,49 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LarkoCalcule.Views.SubtractPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Subtract page !"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand"/>
+        <StackLayout Spacing="0" Padding="0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout BackgroundColor="#8FB6CE" Padding="10,0,10,0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <Image Margin="0,10,0,0" Source="logo_Menu.png" HeightRequest="100"/>
+                <Label Margin="0,3,0,0" Text="LARKO" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="30" TextColor="#FFFFFF"/>
+                <Label Margin="0,0,0,0" Text="CALCULE" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="30" TextColor="#FFFFFF"/>
+            </StackLayout>
+            <Image  Aspect="AspectFill" Margin="0" Source="lark_separator_bas.png" HorizontalOptions="FillAndExpand"/>
+            <StackLayout Spacing="0" Margin="0" Padding="0" BackgroundColor="#FFFFFF"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                <Grid x:Name="calcul_Grid" RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Style="{StaticResource labelchiffresStyle}" x:Name="chiffre1" Text="9" Grid.Row="0" Grid.Column="0"/>
+                    <Label Style="{StaticResource labelchiffresStyle}" x:Name="signe" Text="x" Grid.Row="0" Grid.Column="1"/>
+                    <Label Style="{StaticResource labelchiffresStyle}" x:Name="chiffre2" Text="9" Grid.Row="0" Grid.Column="2"/>
+
+                </Grid>
+            </StackLayout>
+            <StackLayout  Padding="10,0,10,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Grid HorizontalOptions="CenterAndExpand" x:Name="resultats_Grid" RowSpacing="3" ColumnSpacing="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="70"/>
+                        <RowDefinition Height="70"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="40" />
+                    </Grid.ColumnDefinitions>
+                    <Button Style="{StaticResource boutonResultatStyle}" Text="81" Grid.Row="0" Grid.Column="0" Margin="5,20,5,0" x:Name="result_button1" Clicked="result_button1Clicked"/>
+                    <Button Style="{StaticResource boutonResultatStyle}" Text="81" Grid.Row="0" Grid.Column="1" Margin="5,20,5,0" x:Name="result_button2" Clicked="result_button2Clicked"/>
+                    <Button Style="{StaticResource boutonResultatStyle}" Text="81" Grid.Row="1" Grid.Column="0" Margin="5,20,5,0" x:Name="result_button3" Clicked="result_button3Clicked"/>
+                    <Button Style="{StaticResource boutonResultatStyle}" Text="81" Grid.Row="1" Grid.Column="1" Margin="5,20,5,0" x:Name="result_button4" Clicked="result_button4Clicked"/>
+                    <Button Style="{StaticResource boutonValidCancel}" BackgroundColor="#ff7f02" Grid.Column ="2" Grid.Row="0" Margin="0,20,0,0 " x:Name="CancelButton " HorizontalOptions="Center" Text="c" WidthRequest="100" Clicked="CancelButtonClicked"/>
+                    <Button Style="{StaticResource boutonValidCancel}" BackgroundColor="#1cbd52" Grid.Column ="2" Grid.Row="1" Margin="1,20,0,0 " x:Name="ValidButton" HorizontalOptions="Center" Text="V" WidthRequest="100" Clicked="ValidButtonClicked"/>
+                </Grid>
+
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
