@@ -9,12 +9,45 @@ using Xamarin.Forms.Xaml;
 
 namespace LarkoCalcule.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class DividePage : ContentPage
-	{
-		public DividePage ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class DividePage : ContentPage
+    {
+        private Jeu jeuDivide;
+
+        public DividePage()
+        {
+            InitializeComponent();
+            jeuDivide = new Jeu();
+
+        }
+        private void btnAutreCalculClicked(object sender, EventArgs e)
+        {
+            ;
+        }
+        private void ValidButtonClicked(object sender, EventArgs e)
+        {
+            jeuDivide.GenererAleatoiresChiffres();
+            txtChiffre1.Text = (jeuDivide.Chiffre1).ToString();
+        }
+        private void CancelButtonClicked(object sender, EventArgs e)
+        {
+            ;
+        }
+        private void btnResult1Clicked(object sender, EventArgs e)
+        {
+            ;
+        }
+        private void btnResult2Clicked(object sender, EventArgs e)
+        {
+            ;
+        }
+        private void btnResult3Clicked(object sender, EventArgs e)
+        {
+            ;
+        }
+        private void btnResult4Clicked(object sender, EventArgs e)
+        {
+            ;
+        }
+    }
 }

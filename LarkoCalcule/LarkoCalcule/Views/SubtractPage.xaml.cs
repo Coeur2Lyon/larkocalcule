@@ -9,12 +9,44 @@ using Xamarin.Forms.Xaml;
 
 namespace LarkoCalcule.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class SubtractPage : ContentPage
-	{
-		public SubtractPage ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class SubtractPage : ContentPage
+    {
+        private Jeu jeuSubtract;
+
+
+        public SubtractPage()
+        {
+            InitializeComponent();
+            jeuSubtract = new Jeu(); 
+        }
+        private void btnAutreCalculClicked(object sender, EventArgs e)
+        {
+            ;
+        }
+        private void ValidButtonClicked(object sender, EventArgs e)
+        {
+            txtChiffre1.Text = (jeuSubtract.Chiffre1).ToString();
+        }
+        private void CancelButtonClicked(object sender, EventArgs e)
+        {
+            ;
+        }
+        private void btnResult1Clicked(object sender, EventArgs e)
+        {
+            ;
+        }
+        private void btnResult2Clicked(object sender, EventArgs e)
+        {
+            ;
+        }
+        private void btnResult3Clicked(object sender, EventArgs e)
+        {
+            ;
+        }
+        private void btnResult4Clicked(object sender, EventArgs e)
+        {
+            ;
+        }
+    }
 }

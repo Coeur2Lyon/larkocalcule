@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="LarkoCalcule.Views.ErrorPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <forms:AnimationView 
+	    x:Name="error" 	  
+	    Animation="error.json" 
+	    Loop="False" 
+	    AutoPlay="True"	    
+	    HeightRequest="300"
+        WidthRequest="300"/>
+            <StackLayout>
+                <Label Style="{StaticResource labelError}" Text="Aïe, hé non, ce n'est pas le bon résultat."/>
+                <Label Style="{StaticResource labelError}" Text="Concentre toi bien et réessaye."/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
