@@ -97,6 +97,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <BundleResource Include="Resources\bravo.json" />
     <BundleResource Include="Resources\error.json" />
+    <BundleResource Include="showcardgothic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

@@ -61,38 +61,51 @@ namespace LarkoCalcule.Views
         {
             InitPageMultiplication();
         }
-        private void ValidButtonClicked(object sender, EventArgs e)
-        {
-            // Tester l'égalité
-            if ((jeuMultiply.VraiResultat).ToString() == txtResultat.Text)
-            {
-                this.Navigation.PushAsync(new BravoPage());
-            }
-            else if((jeuMultiply.Fauxresultat1).ToString() == txtResultat.Text|| (jeuMultiply.Fauxresultat2).ToString() == txtResultat.Text|| (jeuMultiply.Fauxresultat3).ToString() == txtResultat.Text)
-            {
-                this.Navigation.PushAsync(new BravoPage());
-            }
-        }
-        private void CancelButtonClicked(object sender, EventArgs e)
-        {
-            txtResultat.Text="??";
-        }
+
 
         private void btnResult1Clicked(object sender, EventArgs e)
         {
-            txtResultat.Text = btnResult1.Text;
+            if ((jeuMultiply.VraiResultat).ToString() == btnResult1.Text)
+            {
+                this.Navigation.PushAsync(new BravoPage());
+            }
+            else if ((jeuMultiply.Fauxresultat1).ToString() == btnResult1.Text || (jeuMultiply.Fauxresultat2).ToString() == btnResult1.Text || (jeuMultiply.Fauxresultat3).ToString() == btnResult1.Text)
+            {
+                this.Navigation.PushAsync(new ErrorPage());
+            }
         }
         private void btnResult2Clicked(object sender, EventArgs e)
         {
-            txtResultat.Text = btnResult2.Text;
+            if ((jeuMultiply.VraiResultat).ToString() == btnResult2.Text)
+            {
+                this.Navigation.PushAsync(new BravoPage());
+            }
+            else if ((jeuMultiply.Fauxresultat1).ToString() == btnResult2.Text || (jeuMultiply.Fauxresultat2).ToString() == btnResult2.Text || (jeuMultiply.Fauxresultat3).ToString() == btnResult2.Text)
+            {
+                this.Navigation.PushAsync(new ErrorPage());
+            }
         }
         private void btnResult3Clicked(object sender, EventArgs e)
         {
-            txtResultat.Text = btnResult3.Text;
+            if ((jeuMultiply.VraiResultat).ToString() == btnResult3.Text)
+            {
+                this.Navigation.PushAsync(new BravoPage());
+            }
+            else if ((jeuMultiply.Fauxresultat1).ToString() == btnResult3.Text || (jeuMultiply.Fauxresultat2).ToString() == btnResult3.Text || (jeuMultiply.Fauxresultat3).ToString() == btnResult3.Text)
+            {
+                this.Navigation.PushAsync(new ErrorPage());
+            }
         }
         private void btnResult4Clicked(object sender, EventArgs e)
         {
-            txtResultat.Text = btnResult3.Text;
+            if ((jeuMultiply.VraiResultat).ToString() == btnResult4.Text)
+            {
+                this.Navigation.PushAsync(new BravoPage());
+            }
+            else if ((jeuMultiply.Fauxresultat1).ToString() == btnResult4.Text || (jeuMultiply.Fauxresultat2).ToString() == btnResult4.Text || (jeuMultiply.Fauxresultat3).ToString() == btnResult4.Text)
+            {
+                this.Navigation.PushAsync(new ErrorPage());
+            }
         }
     }
 }
