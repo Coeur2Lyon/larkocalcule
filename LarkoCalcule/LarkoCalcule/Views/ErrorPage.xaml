@@ -14,8 +14,8 @@
         WidthRequest="300"/>
             <Frame Style="{StaticResource frameError}">
                 <StackLayout>
-                    <Label  Style="{StaticResource labelError}" Text="Aïe, hé non, ce n'est pas le bon résultat."/>
-                    <Label  Style="{StaticResource labelError}" Text="Concentre toi bien et réessaye."/>
+                    <Label  Style="{StaticResource textError}" Text="Aïe, hé non, ce n'est pas le bon résultat."/>
+                    <Label  Style="{StaticResource textError}" Text="Concentre toi bien et réessaye."/>
                 </StackLayout>
             </Frame>
         </StackLayout>

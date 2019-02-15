@@ -28,26 +28,31 @@
             </Style>            
             <Style x:Key="labelchiffresStyle" TargetType="Label">
                 <Setter Property="TextColor" Value="#8FB6CE" />
-                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="FontSize" Value="40"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
                 <Setter Property="MinimumWidthRequest" Value="60"/>
                 <Setter Property="MinimumHeightRequest" Value="70"/>
             </Style>
-            <Style x:Key="labelBravo" TargetType="Label">
-                <Setter Property="TextColor" Value="#FFFFFF" />
-                <Setter Property="BackgroundColor" Value="#ff7f02" />
+            <Style x:Key="textBravo" TargetType="Label">
+                <Setter Property="TextColor" Value="#FFFFFF" />                
                 <Setter Property="FontSize" Value="40"/>
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
-            <Style x:Key="labelError" TargetType="Label">
-                <Setter Property="TextColor" Value="#FFFFFF" />
-                <Setter Property="BackgroundColor" Value="#ff7f02"/>
-                <Setter Property="FontSize" Value="40"/>
+            <Style x:Key="textError" TargetType="Label">
+                <Setter Property="TextColor" Value="#FFFFFF" />                
+                <Setter Property="FontSize" Value="35"/>
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
+            <Style x:Key="frameBravo" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="LimeGreen"/>                
+            </Style>
+            <Style x:Key="frameError" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#DC143C" />
+            </Style>
+
 
         </ResourceDictionary>
 
