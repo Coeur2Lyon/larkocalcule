@@ -13,10 +13,13 @@
 	    HeightRequest="300"
         WidthRequest="300"
                 />
-            <StackLayout>
-                <Label Style="{StaticResource labelBravo}" Text="Bravo, c'est le bon résultat"/>
-            </StackLayout>
-        </StackLayout>        
-        
+
+            <Frame Style="{StaticResource frameBravo}">
+                <StackLayout>
+                    <Label Style="{StaticResource textBravo}" Text="Bravo, c'est le bon résultat"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

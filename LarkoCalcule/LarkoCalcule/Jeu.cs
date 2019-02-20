@@ -11,7 +11,6 @@ namespace LarkoCalcule
 {
     class Jeu
     {
-
         string position1;
         string position2;
         string position3;
@@ -25,10 +24,10 @@ namespace LarkoCalcule
         private int fauxresultat2 = 0;
         private int fauxresultat3 = 0;
 
-        public int Chiffre1 { get => chiffre1; set => chiffre1 = value; }
-        public int Chiffre2 { get => chiffre2; set => chiffre2 = value; }
-        public int VraiResultat { get => vraiResultat; set => vraiResultat = value; }
-        public int Positionresultat { get => positionresultat; set => positionresultat = value; }
+        public int Chiffre1 { get => chiffre1; set => chiffre1 = value;}
+        public int Chiffre2 { get => chiffre2; set => chiffre2 = value;}
+        public int VraiResultat { get => vraiResultat; set => vraiResultat = value;}
+        public int Positionresultat { get => positionresultat; set => positionresultat = value;}
         public int Fauxresultat1 { get => fauxresultat1; set => fauxresultat1 = value; }
         public int Fauxresultat2 { get => fauxresultat2; set => fauxresultat2 = value; }
         public int Fauxresultat3 { get => fauxresultat3; set => fauxresultat3 = value; }

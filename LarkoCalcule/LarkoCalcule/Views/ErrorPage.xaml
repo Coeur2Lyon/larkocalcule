@@ -12,10 +12,12 @@
 	    AutoPlay="True"	    
 	    HeightRequest="300"
         WidthRequest="300"/>
-            <StackLayout>
-                <Label Style="{StaticResource labelError}" Text="Aïe, hé non, ce n'est pas le bon résultat."/>
-                <Label Style="{StaticResource labelError}" Text="Concentre toi bien et réessaye."/>
-            </StackLayout>
+            <Frame Style="{StaticResource frameError}">
+                <StackLayout>
+                    <Label  Style="{StaticResource textError}" Text="Aïe, hé non, ce n'est pas le bon résultat."/>
+                    <Label  Style="{StaticResource textError}" Text="Concentre toi bien et réessaye."/>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
