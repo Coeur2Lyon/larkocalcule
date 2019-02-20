@@ -6,10 +6,17 @@
         <StackLayout Spacing="0" Padding="0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <StackLayout BackgroundColor="#8FB6CE" Padding="10,0,10,0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
                 <Image Margin="0,10,0,0" Source="logo_Menu.png" HeightRequest="100"/>
-                <Label Margin="0,3,0,0" Text="LARKO" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="30" TextColor="#FFFFFF"/>
-                <Label Margin="0,0,0,0" Text="CALCULE" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="30" TextColor="#FFFFFF"/>
+
+                <Label Margin="0,0,0,0" Text="LARKO ADDITIONE" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="30" TextColor="#FFFFFF">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="showcardgothic.ttf" />
+                            <On Platform="Android" Value="showcardgothic.ttf#showcardgothic" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
             </StackLayout>
-            <Image  Aspect="AspectFill" Margin="0" Source="lark_separator_bas.png" HorizontalOptions="FillAndExpand"/>
+            <Image  Aspect="AspectFill" Margin="0" Source="lark_separator_bas.png" HorizontalOptions="CenterAndExpand"/>
             <StackLayout Spacing="0" Margin="0" Padding="0" BackgroundColor="#FFFFFF"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
                 <Grid x:Name="calcul_Grid" RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Center">
                     <Grid.RowDefinitions>
@@ -20,31 +27,41 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Label Style="{StaticResource labelchiffresStyle}" x:Name="txtChiffre1" Text="9" Grid.Row="0" Grid.Column="0"/>
-                    <Label Style="{StaticResource labelchiffresStyle}" x:Name="txtSigne" Text="x" Grid.Row="0" Grid.Column="1"/>
-                    <Label Style="{StaticResource labelchiffresStyle}" x:Name="txtChiffre2" Text="9" Grid.Row="0" Grid.Column="2"/>
+                    <Label Style="{StaticResource labelchiffresStyle}" x:Name="txtChiffre1" Text="*" Grid.Row="0" Grid.Column="0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="showcardgothic.ttf" />
+                                <On Platform="Android" Value="showcardgothic.ttf#showcardgothic" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                    <Image Style="{StaticResource boutonLarkoStyle}" Source="additionne.png" Grid.Row="0" Grid.Column="1" Margin="0 "/>
+                    <Label Style="{StaticResource labelchiffresStyle}" x:Name="txtChiffre2" Text="*" Grid.Row="0" Grid.Column="2">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="showcardgothic.ttf" />
+                                <On Platform="Android" Value="showcardgothic.ttf#showcardgothic" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
                 </Grid>
                 <Button Style="{StaticResource boutonSombreStyle}" x:Name="btnAutreCalcul" Text="Autre calcul" HorizontalOptions="Center" Padding="10,0,10,0" Margin="0,10,0,10" Clicked="btnAutreCalculClicked"/>
             </StackLayout>
             <StackLayout  Padding="10,0,10,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <Grid HorizontalOptions="CenterAndExpand" x:Name="resultats_Grid" RowSpacing="3" ColumnSpacing="3">
                     <Grid.RowDefinitions>
-                        <RowDefinition  Height="70"/>
-                        <RowDefinition Height="70"/>
+                        <RowDefinition  Height="*"/>
+                        <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="60" />
-                        <ColumnDefinition Width="60" />
-                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <Button Style="{StaticResource boutonResultatStyle}" Text="81" Grid.Row="0" Grid.Column="0" Margin="5,20,5,0" x:Name="btnResult1" Clicked="btnResult1Clicked"/>
-                    <Button Style="{StaticResource boutonResultatStyle}" Text="81" Grid.Row="0" Grid.Column="1" Margin="5,20,5,0" x:Name="btnResult2" Clicked="btnResult2Clicked"/>
-                    <Button Style="{StaticResource boutonResultatStyle}" Text="81" Grid.Row="1" Grid.Column="0" Margin="5,20,5,0" x:Name="btnResult3" Clicked="btnResult3Clicked"/>
-                    <Button Style="{StaticResource boutonResultatStyle}" Text="81" Grid.Row="1" Grid.Column="1" Margin="5,20,5,0" x:Name="btnResult4" Clicked="btnResult4Clicked"/>
-                    <Button Style="{StaticResource boutonValidCancel}" BackgroundColor="#ff7f02" Grid.Column ="2" Grid.Row="0" Margin="0,20,0,0 " x:Name="CancelButton " HorizontalOptions="Center" Text="c" WidthRequest="100"/>
-                    <Button Style="{StaticResource boutonValidCancel}" BackgroundColor="#1cbd52" Grid.Column ="2" Grid.Row="1" Margin="1,20,0,0 " x:Name="ValidButton" HorizontalOptions="Center" Text="V" WidthRequest="100"/>
+                    <Button Style="{StaticResource boutonResultatStyle}" Text="" Grid.Row="0" Grid.Column="0" Margin="5,20,5,0" x:Name="btnResult1" Clicked="btnResult1Clicked"/>
+                    <Button Style="{StaticResource boutonResultatStyle}" Text="" Grid.Row="0" Grid.Column="1" Margin="5,20,5,0" x:Name="btnResult2" Clicked="btnResult2Clicked"/>
+                    <Button Style="{StaticResource boutonResultatStyle}" Text="" Grid.Row="1" Grid.Column="0" Margin="5,20,5,0" x:Name="btnResult3" Clicked="btnResult3Clicked"/>
+                    <Button Style="{StaticResource boutonResultatStyle}" Text="" Grid.Row="1" Grid.Column="1" Margin="5,20,5,0" x:Name="btnResult4" Clicked="btnResult4Clicked"/>
                 </Grid>
-
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

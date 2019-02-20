@@ -41,8 +41,7 @@
                     <Button Style="{StaticResource boutonResultatStyle}" Text="81" Grid.Row="0" Grid.Column="1" Margin="5,20,5,0" x:Name="btnResult2" Clicked="btnResult2Clicked"/>
                     <Button Style="{StaticResource boutonResultatStyle}" Text="81" Grid.Row="1" Grid.Column="0" Margin="5,20,5,0" x:Name="btnResult3" Clicked="btnResult3Clicked"/>
                     <Button Style="{StaticResource boutonResultatStyle}" Text="81" Grid.Row="1" Grid.Column="1" Margin="5,20,5,0" x:Name="btnResult4" Clicked="btnResult4Clicked"/>
-                    <Button Style="{StaticResource boutonValidCancel}" BackgroundColor="#ff7f02" Grid.Column ="2" Grid.Row="0" Margin="0,20,0,0 " x:Name="CancelButton " HorizontalOptions="Center" Text="c" WidthRequest="100" Clicked="CancelButtonClicked"/>
-                    <Button Style="{StaticResource boutonValidCancel}" BackgroundColor="#1cbd52" Grid.Column ="2" Grid.Row="1" Margin="1,20,0,0 " x:Name="ValidButton" HorizontalOptions="Center" Text="V" WidthRequest="100" Clicked="ValidButtonClicked"/>
+                    
                 </Grid>
             </StackLayout>
         </StackLayout>

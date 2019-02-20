@@ -24,15 +24,9 @@ namespace LarkoCalcule.Views
         {
             ;
         }
-        private void ValidButtonClicked(object sender, EventArgs e)
-        {
-            jeuDivide.GenererAleatoiresChiffres();
-            txtChiffre1.Text = (jeuDivide.Chiffre1).ToString();
-        }
-        private void CancelButtonClicked(object sender, EventArgs e)
-        {
-            ;
-        }
+                
+       
+        
         private void btnResult1Clicked(object sender, EventArgs e)
         {
             ;
