@@ -24,7 +24,7 @@ namespace LarkoCalcule.Views
         private void InitPageDivision()
         {
             jeuDivide.GenererAleatoiresChiffres();
-            while (jeuDivide.Chiffre1 < jeuDivide.Chiffre2 || (jeuDivide.Chiffre1 % jeuDivide.Chiffre2 != 0))
+            while (jeuDivide.Chiffre1 < jeuDivide.Chiffre2 || jeuDivide.Chiffre1 % jeuDivide.Chiffre2 != 0)
             {
                 jeuDivide.GenererAleatoiresChiffres();
             }
