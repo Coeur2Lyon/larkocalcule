@@ -16,5 +16,26 @@ namespace LarkoCalcule.Views
 		{
 			InitializeComponent ();
 		}
-	}
+        private void MultiplyButtonClicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new MultiplyPage());
+        }
+        private void DivideButtonClicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new DividePage());
+        }
+        private void AddButtonClicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new AddPage());
+        }
+        private void SubtractButtonClicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new SubtractPage());
+        }
+        private void CalculButtonClicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new CalculPage());
+        }
+
+    }
 }

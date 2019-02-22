@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LarkoCalcule.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace LarkoCalcule
         {
             InitializeComponent();
 
-            MainPage = new Countpage();
+            MainPage = new NavigationPage(new MenuPage());
         }
 
         protected override void OnStart()
