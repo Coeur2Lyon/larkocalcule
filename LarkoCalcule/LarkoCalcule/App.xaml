@@ -6,17 +6,17 @@
         <ResourceDictionary>
             <Style TargetType="NavigationPage" ApplyToDerivedTypes="True">
                 <Setter Property="BackgroundColor" Value="#FFFFFF" />
-                <Setter Property="BarBackgroundColor" Value="#8FB6CE"/>
+                <Setter Property="BarBackgroundColor" Value="#ef5e5e"/>
                 <Setter Property="BarTextColor" Value="#FFFFFF"/>
             </Style>
             <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
                 <Setter Property="BackgroundColor" Value="#FFFFFF"/>
             </Style>
             <Style x:Key="boutonLarkoStyle" TargetType="ImageButton">
-                <Setter Property="BackgroundColor" Value="#FFFFFF"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
             </Style>
             <Style x:Key="boutonSombreStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#3465a4" />
+                <Setter Property="BackgroundColor" Value="#d82a2a" />
                 <Setter Property="TextColor" Value="#FFFFFF" />
             </Style>
             <Style x:Key="boutonResultatStyle" TargetType="Button">
@@ -25,9 +25,9 @@
                 <Setter Property="FontSize" Value="Large"/>
                 <Setter Property="MinimumWidthRequest" Value="70"/>
                 <Setter Property="MinimumHeightRequest" Value="70"/>
-            </Style>            
+            </Style>
             <Style x:Key="labelchiffresStyle" TargetType="Label">
-                <Setter Property="TextColor" Value="#8FB6CE" />
+                <Setter Property="TextColor" Value="#d82a2a" />
                 <Setter Property="FontSize" Value="40"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
@@ -35,25 +35,23 @@
                 <Setter Property="MinimumHeightRequest" Value="70"/>
             </Style>
             <Style x:Key="textBravo" TargetType="Label">
-                <Setter Property="TextColor" Value="#FFFFFF" />                
+                <Setter Property="TextColor" Value="#FFFFFF" />
                 <Setter Property="FontSize" Value="40"/>
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
             <Style x:Key="textError" TargetType="Label">
-                <Setter Property="TextColor" Value="#FFFFFF" />                
+                <Setter Property="TextColor" Value="#FFFFFF" />
                 <Setter Property="FontSize" Value="35"/>
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
             <Style x:Key="frameBravo" TargetType="Frame">
-                <Setter Property="BackgroundColor" Value="LimeGreen"/>                
+                <Setter Property="BackgroundColor" Value="LimeGreen"/>
             </Style>
             <Style x:Key="frameError" TargetType="Frame">
                 <Setter Property="BackgroundColor" Value="#DC143C" />
             </Style>
-
-
         </ResourceDictionary>
 
     </Application.Resources>

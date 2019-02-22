@@ -100,6 +100,11 @@ namespace LarkoCalcule.Views
             secondNumber = 0;
             currentState = 1;
             this.txtResultat.Text = "0";
+        }        
+            void MenuButtonClicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new MenuPage());
         }
+
     }
 }

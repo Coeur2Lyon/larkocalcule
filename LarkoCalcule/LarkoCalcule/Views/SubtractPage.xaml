@@ -4,8 +4,8 @@
              x:Class="LarkoCalcule.Views.SubtractPage">
     <ContentPage.Content>
         <StackLayout Spacing="0" Padding="0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <StackLayout BackgroundColor="#8FB6CE" Padding="10,0,10,0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
-                <Image Margin="0,10,0,0" Source="logo_Menu.png" HeightRequest="100"/>
+            <StackLayout BackgroundColor="#ef5e5e" Padding="10,0,10,0" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <ImageButton Style="{StaticResource boutonLarkoStyle}" Margin="0,10,0,0" Source="LogoRondLarkoMenu.png" HeightRequest="100" Clicked="CalculButtonClicked"/>
 
                 <Label Margin="0,0,0,0" Text="LARKO SOUSTRAIT" VerticalOptions="Center" HorizontalTextAlignment="Center" FontSize="30" TextColor="#FFFFFF">
                     <Label.FontFamily>

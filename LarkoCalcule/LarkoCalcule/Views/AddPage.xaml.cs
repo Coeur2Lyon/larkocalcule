@@ -107,5 +107,9 @@ namespace LarkoCalcule.Views
                 this.Navigation.PushAsync(new ErrorPage());
             }
         }
+        private void CalculButtonClicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new CalculPage());
+        }
     }
 }
