@@ -2961,13 +2961,13 @@ namespace LarkoCalcule.Droid
 			public const int ic_vol_type_tv_light = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int lark_separator_bas = 2130837775;
+			public const int icon = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int larko_Calcul_Menu = 2130837776;
+			public const int lark_separator_bas = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int logo_Menu = 2130837777;
+			public const int larko_Calcul_Menu = 2130837777;
 			
 			// aapt resource value: 0x7f020112
 			public const int LogoRondLarkoMenu = 2130837778;
